@@ -1,2 +1,1 @@
-I finished the 5 pages and all the files I created are in the folder "src\notProvided". I did little changes in the file client.java because that first drawable used ExpensiveLineRenderer which I don't need to use.
-I didn't do the anti-aliasing because I don't know how to do that. I used BresenhamLineRenderer to replace that algorithm. And the ColoredDrawable doesn't work.
+for some reasons, I cannot show this one now.
