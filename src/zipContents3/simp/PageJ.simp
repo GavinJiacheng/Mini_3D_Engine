@@ -1,0 +1,30 @@
+{
+	ambient 0.75 1 0.75
+	{
+		translate 0 25 -32
+		rotate X -30
+		camera  -2 -2 1 2 -0.1 -200
+		depth 0 -200 (0 0 0)
+	}
+	
+#	wire
+	{
+		translate 0 0 -80
+		rotate Y -60
+		obj "bowling"
+	}
+
+    ambient 0.2 0.5 1
+	filled
+    {
+    	translate -5 0 -50
+    	scale 0.1 0.1 0.1
+    	rotate Y 20
+    	obj "dummy"
+    }
+	{
+		translate -40 0 10
+		file "stripeGrid"
+	}
+	
+}

@@ -4,13 +4,52 @@ import windowing.graphics.Color;
 
 public class Vertex3D implements Vertex {
 	protected Point3DH point;
+	protected Point3DH CmaeraPoint;
 	protected Color color;
+	public boolean hasNormal = false;
+	public double[] Normal;
 	
 	public Vertex3D(Point3DH point, Color color) {
 		super();
 		this.point = point;
 		this.color = color;
 	}
+	public void setNormal(double x, double y, double z){
+		Normal = new double[3];
+		Normal[0] = x;
+		Normal[1] = y;
+		Normal[2] = z;
+		hasNormal = true;
+	}
+
+	public void setNormal(Point3DH p){
+		Normal = new double[3];
+		Normal[0] = p.getX();
+		Normal[1] = p.getY();
+		Normal[2] = p.getZ();
+		hasNormal = true;
+	}
+
+	public double[] getNormal(){
+		return Normal;
+	}
+
+	public void setCmaeraPoint(){
+		CmaeraPoint = new Point3DH(getX(), getY(), getZ());
+	}
+
+	public void setCmaeraPoint(Point3DH p){
+		CmaeraPoint = p;
+	}
+
+	public Point3DH getCameraPoint(){
+		return CmaeraPoint;
+	}
+
+	public void setCmaeraPoint(double x, double y, double z){
+		CmaeraPoint = new Point3DH(x, y, z);
+	}
+
 	public Vertex3D(double x, double y, double z, Color color) {
 		this(new Point3DH(x, y, z), color);
 	}
