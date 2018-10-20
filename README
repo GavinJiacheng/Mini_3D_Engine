@@ -1,9 +1,3 @@
-1, I finished the phong, gouraud and flat Algorithm. They work prefect on my project.
+This is my class project from CMPT 361: Introduction to Computer Graphics
 
-
-2, there are many problems. The page C2 and 3 cannot show correctly. I didn't do the obj reader in assignment3 well. There are something wrong about the obj reader.
-
-
-3, This assignment took me a about 5 whole days to do. I don't have too much time to finish it.
-
-4, I submited this before the deadline, but then I did some debugging, so I uploaded it late.
+It still has some bugs for the last part of this project with the light calculation. But works fine for all other parts.
